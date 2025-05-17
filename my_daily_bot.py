@@ -1,8 +1,9 @@
+import os
 import asyncio
 from aiogram import Bot, Dispatcher, types
 from datetime import datetime, timedelta
 
-API_TOKEN = '8041293128:AAEpZzF0MA6yEKxk-K6BWANtAm2GR4X5p1U'
+API_TOKEN = os.getenv('API_TOKEN')
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
